@@ -17,5 +17,14 @@ public class Main {
         System.out.println(cashbackStandart);
         System.out.println(cashbackIncreased);
         System.out.println(cashbackSpecial);
+
+        int cashbackAll = cashbackStandart+cashbackIncreased+cashbackSpecial;
+        System.out.println(cashbackAll);
+
+       int limit = 3000;
+                if (cashbackAll > 3000){
+                   cashbackAll=limit;
+                }
+        System.out.println(cashbackAll);
     }
 }
